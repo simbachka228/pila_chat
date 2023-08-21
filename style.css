@@ -316,6 +316,8 @@ span {
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
+    padding: 20px;
+    
 }
 
 .news-content a i {
@@ -323,6 +325,17 @@ span {
     color: var(--second-bg-color);
 }
 
+.news-content .choose {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+}
+
+.news-content .choose a{
+    padding: 2em;
+    margin: 1em;
+
+}
 .footer {
     display: flex;
     justify-content: space-between;

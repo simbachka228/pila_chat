@@ -306,6 +306,7 @@ span {
 .news-content p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    
 }
 
 .news-content a {
@@ -384,6 +385,7 @@ span {
 }
 
 @media (max-width: 768px) {
+
     #menu_icon {
         display: block;
     }
@@ -466,6 +468,7 @@ span {
     .news-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media (max-width: 617px) {
@@ -516,6 +519,8 @@ span {
   .wrapper > div {
     grid-area: 1/1/-1/-1;
   }
+
+
   .top {
     clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
   }
@@ -529,12 +534,87 @@ span {
     transform: translateX(-0.02em);
   }
 
-.about-content p {
+.about_content .topic {
+    color: #ff0000;
+    font-size: 2.75rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.about_content .description {
       margin: 0;
-      color: bisque;
-      width: 200px;
-      height: 200px;
+      color: rgb(255, 255, 255);
+      width: 1200px;
       padding-left: 50px;
+      text-align: center;
+      font-size: 2rem;
+      padding-bottom: 2.5rem;
     }
 
-    
+
+
+.about_content .desc1 {
+    color: #707070;
+    font-size: 1.8rem;
+}
+
+.accordion {
+    width: 1200px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+    font-size: 2rem;
+    border-radius: 15px;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    background: #500808;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.accordion .contentBx .label::before {
+    content:'+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before {
+    content:'-';
+}
+
+.accordion .contentBx .cont {
+    position: relative;
+    background: #ffe3e3;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    color: #000000;
+    border-radius: 15px;
+}
+
+.accordion .contentBx.active .cont {
+    height: auto;
+    padding: 10px;
+}
+
+.accordion .contentBx .cont1 {
+    color: #0000ff;
+    font-size: 20px;
+    padding-left: auto;
+}
+
+.accordion .contentBx .cont2 {
+    color: #ff2200;
+    font-size: 20px;
+    padding-left: auto;
+}
